@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- <link rel="stylesheet" href="./css/all.min.css"> -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/main.js" defer></script>
+
+    <style>
+        img {
+            height: 290px;
+            cursor: pointer;
+        }
+
+        .myLayer {
+            position: fixed;
+            /* unset: 0; */
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        .mainImage {
+            width: 50%;
+            height: 60%;
+            background-image: url(./images/2.webp);
+            background-size: 100% 100%;
+        }
+
+        .fa {
+            font-size: 2rem;
+            padding: 0 1rem;
+            cursor: pointer;
+        }
+
+        @media (min-width:766px) and (max-width:1150px) {
+            img {
+                height: 240px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container  py-5 ">
+        <div class="row">
+            <div class="col-md-4 ">
+                <figure>
+                    <img src="./images/1.webp" class="w-100 " alt="product">
+                </figure>
+            </div>
+            <div class="col-md-4">
+                <figure>
+                    <img src="./images/2.webp" class="w-100 " alt="product">
+                </figure>
+            </div>
+            <div class="col-md-4">
+                <figure>
+                    <img src="./images/3.webp" class="w-100 " alt="product">
+                </figure>
+            </div>
+            <div class="col-md-4">
+                <figure>
+                    <img src="./images/4.webp" class="w-100 " alt="product">
+                </figure>
+            </div>
+            <div class="col-md-4">
+                <figure>
+                    <img src="./images/1.webp" class="w-100 " alt="product">
+                </figure>
+            </div>
+            <div class="col-md-4">
+                <figure>
+                    <img src="./images/4.webp" class="w-100 " alt="product">
+                </figure>
+            </div>
+        </div>
+
+        <div class="myLayer d-none  d-flex justify-content-center align-items-center  bg-dark bg-opacity-25  ">
+            <div class="mainImage d-flex align-items-center position-relative  ">
+                <div class="w-100 d-flex  justify-content-between">
+                    <i class="fa fa-arrow-left text-white  " aria-hidden="true"></i>
+                    <i class="fa fa-arrow-right text-white " aria-hidden="true"></i>
+                </div>
+                <i class="fa fa-times  position-absolute top-0 end-0 text-white" aria-hidden="true"></i>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
